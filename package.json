@@ -1,0 +1,31 @@
+{
+  "name": "metrics-druid",
+  "description": "Push metrics to ruid",
+  "version": "0.1.1",
+  "homepage": "https://github.com/yellowmessenger/metrics-kairosdb",
+  "author": {
+    "name": "Jaya Kishore Reddy",
+    "email": "kishore@yellowmessenger.com"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yellowmessenger/metrics-druid"
+  },
+  "bugs": {
+    "url": "https://github.com/yellowmessenger/metrics-druid/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/yellowmessenger/metrics-druid/LICENSE"
+    }
+  ],
+  "main": "lib/metrics-druid",
+  "dependencies": {
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "express": "~3.4.7"
+  }
+}
