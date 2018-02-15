@@ -1,8 +1,8 @@
 {
   "name": "metrics-druid",
   "description": "Push metrics to ruid",
-  "version": "0.1.3",
-  "homepage": "https://github.com/yellowmessenger/metrics-kairosdb",
+  "version": "0.1.4",
+  "homepage": "https://github.com/yellowmessenger/metrics-druid",
   "author": {
     "name": "Jaya Kishore Reddy",
     "email": "kishore@yellowmessenger.com"
