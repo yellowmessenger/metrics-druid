@@ -1,7 +1,7 @@
 {
   "name": "metrics-druid",
   "description": "Push metrics to ruid",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "homepage": "https://github.com/yellowmessenger/metrics-druid",
   "author": {
     "name": "Jaya Kishore Reddy",
