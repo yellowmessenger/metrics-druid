@@ -1,0 +1,68 @@
+{
+  "type" : "index_hadoop",
+  "spec" : {
+    "ioConfig" : {
+      "type" : "hadoop",
+      "inputSpec" : {
+        "type" : "static",
+        "paths" : "d.json"
+      }
+    },
+    "dataSchema" : {
+      "dataSource" : "metrics",
+      "granularitySpec" : {
+        "type" : "uniform",
+        "segmentGranularity" : "day",
+        "queryGranularity" : "none",
+        "intervals" : ["2018-05-05/2018-05-06"]
+      },
+      "parser" : {
+        "type" : "hadoopyString",
+        "parseSpec" : {
+          "format" : "json",
+          "dimensionsSpec" : {
+            "dimensions" : [
+              "user",
+              "metric",
+              "platform",
+              "uid"
+            ]
+          },
+          "timestampSpec" : {
+            "format" : "auto",
+            "column" : "time"
+          }
+        }
+      },
+      "metricsSpec" : [
+        {
+          "type" : "count",
+          "name" : "count"
+        },
+        {
+          "name" : "value_sum",
+          "type" : "doubleSum",
+          "fieldName" : "value"
+        },
+        {
+          "fieldName" : "value",
+          "name" : "value_min",
+          "type" : "doubleMin"
+        },
+        {
+          "type" : "doubleMax",
+          "name" : "value_max",
+          "fieldName" : "value"
+        }
+      ]
+    },
+    "tuningConfig" : {
+      "type" : "hadoop",
+      "partitionsSpec" : {
+        "type" : "hashed",
+        "targetPartitionSize" : 5000000
+      },
+      "jobProperties" : {}
+    }
+  }
+}
