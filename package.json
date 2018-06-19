@@ -23,7 +23,8 @@
   ],
   "main": "lib/metrics-druid",
   "dependencies": {
-    "request": "^2.79.0"
+    "request": "^2.79.0",
+    "configstore": "^3.1.2"
   },
   "devDependencies": {
     "express": "~3.4.7"
