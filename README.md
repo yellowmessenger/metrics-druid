@@ -3,7 +3,7 @@
 ## Installation
 
 ``` bash
-npm install git+https://github.com/yellowmessenger/metrics-druid.git#0.3.0 --save
+npm install git+https://github.com/yellowmessenger/metrics-druid.git#0.3.1 --save
 ```
 
 ## Usage
