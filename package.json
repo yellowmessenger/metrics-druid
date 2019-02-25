@@ -24,10 +24,7 @@
   "main": "lib/metrics-druid",
   "dependencies": {
     "configstore": "^3.1.2",
-    "node-rdkafka": "^2.5.1",
     "request": "^2.79.0"
   },
-  "devDependencies": {
-    "express": "~3.4.7"
-  }
+  "devDependencies": {}
 }
