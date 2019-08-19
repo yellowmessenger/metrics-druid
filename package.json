@@ -23,6 +23,7 @@
   ],
   "main": "lib/metrics-druid",
   "dependencies": {
+    "@elastic/elasticsearch": "^7.3.0",
     "configstore": "^3.1.2",
     "request": "^2.79.0"
   },
