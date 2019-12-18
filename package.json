@@ -1,6 +1,6 @@
 {
   "name": "metrics-druid",
-  "description": "Push metrics to ruid",
+  "description": "Push metrics to druid",
   "version": "0.3.2",
   "homepage": "https://github.com/yellowmessenger/metrics-druid",
   "author": {
